@@ -6,7 +6,6 @@ body {
 }
 
 .mole {
-    background-image: url(../Images/GameImages/cartoon_mole.png);
     background-size: cover;
 }
 .board {
@@ -21,4 +20,31 @@ body {
     width: 132px;
     border: 1px solid red;
     background-color: rgb(208, 152, 84);
+}
+
+.time-score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(231, 235, 8);
+}
+
+#header {
+    width: 403px;
+    height: 40px;
+    border: 1px solid black;
+    text-align: center;
+    padding-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(67, 67, 151);
+}
+
+.start-game {
+    height: 40px;
+    width: 100px;
+    color: rgb(231, 235, 8);
+    background-color: rgb(67, 67, 151);
+    font-size: 15px;
+    margin-left: 35px;
 }
