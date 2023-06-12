@@ -22,4 +22,15 @@ function randomBoxes() {
     hit = randomBoxes.id;
 }
 
+//Hit and score function
+boardBoxes.forEach((boardBox) => {
+    boardBox.addEventListener('mousedown', () => {
+        if (boardBox.id === hit) {
+            result++;
+            score.textContent === result;
+            hit = null;
+        }
+    });
+});
+
 
