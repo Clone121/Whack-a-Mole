@@ -1,0 +1,13 @@
+.board {
+    width: 403px;
+    height: 403px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boardBox {
+    height: 132px;
+    width: 132px;
+    border: 1px solid red;
+    background-color: rgb(208, 152, 84);
+}
