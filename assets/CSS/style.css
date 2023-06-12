@@ -6,6 +6,7 @@ body {
 }
 
 .mole {
+    background-image: url(../Images/GameImages/cartoon_mole.png);
     background-size: cover;
 }
 .board {

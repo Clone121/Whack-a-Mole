@@ -25,12 +25,32 @@ function randomBoxes() {
 //Hit and score function
 boardBoxes.forEach((boardBox) => {
     boardBox.addEventListener('mousedown', () => {
-        if (boardBox.id === hit) {
+        if (boardBox.id == hit) {
             result++;
-            score.textContent === result;
+            score.textContent = result;
             hit = null;
         }
     });
 });
 
+function moveMole() {
+    result = 0;
+    currentTime = 10;
+    // Game speed
+    countTime = setInterval(randomBoxes, 1000);
+    countDownTimer = setInterval(countDown, 1000);
+    timeLeft.textContent = currentTime;
+    score.textContent = result;
+}
 
+function countDown() {
+    currentTime--;
+    timeLeft.textContent = currentTime;
+    if (currentTime === 0) {
+        clearInterval(countDownTimer);
+        clearInterval(countTime);
+        alert('GAME OVER! Your final score is : ' + result);
+    }
+}
+
+startGame.addEventListener('click', moveMole);
