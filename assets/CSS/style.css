@@ -1,3 +1,14 @@
+body {
+    background-image: url(../Images/GameImages/jungleBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.mole {
+    background-image: url(../Images/GameImages/cartoon_mole.png);
+    background-size: cover;
+}
 .board {
     width: 403px;
     height: 403px;
