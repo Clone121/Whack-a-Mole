@@ -49,3 +49,79 @@ body {
     font-size: 15px;
     margin-left: 10px 0 0 20px;
 }
+
+@media screen and (min-width: 749px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #header {
+        width: 350px;
+        height: 40px;
+        border: 1px solid black;
+        text-align: center;
+        padding-top: 5px;
+        color: rgb(242, 241, 232);
+        background-color: rgb(67, 67, 151);
+        border-radius: 10px;
+    }
+
+    .board {
+        width: 403px;
+        height: 403px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .boardBox {
+        height: 132px;
+        width: 132px;
+        border: 1px solid red;
+        background-color: rgb(208, 152, 84);
+    }
+
+    .time-score {
+        color: rgb(231, 235, 8);
+        margin-right: 50px;
+    }
+}
+
+@media screen and (min-width: 285px) {
+    body {
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-left: 50px;
+    }
+
+    #header {
+        font-size: 23px;
+        width: 300px;
+        height: 40px;
+        border: 1px solid black;
+        text-align: center;
+        padding-top: 6px;
+        color: rgb(242, 241, 232);
+        background-color: rgb(67, 67, 151);
+        border-radius: 10px;
+    }
+
+    .board {
+        width: 303px;
+        height: 303px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .boardBox {
+        height: 99px;
+        width: 99px;
+        border: 1px solid red;
+        background-color: rgb(208, 152, 84);
+    }
+
+    .time-score {
+        color: rgb(231, 235, 8);
+        margin-right: 45px;
+    }
+}
