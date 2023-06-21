@@ -1,7 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-image: url(../Images/GameImages/jungleBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+
     height: 100vh;
 }
 
@@ -26,7 +32,7 @@ body {
 
 .board {
     width: 606px;
-    height: 606px;
+    height: 600px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -39,36 +45,50 @@ body {
 }
 
 .mole {
-    background-image: url(../Images/GameImages/cartoon_mole.png);
+    background-image: url(cartoon_mole.png);
     background-size: cover;
 }
 #header {
     width: 403px;
     height: 40px;
-    border: 1px solid black;
     text-align: center;
     padding-top: 5px;
     color: rgb(242, 241, 232);
+}
+
+.hero {
     background-color: rgb(67, 67, 151);
     border-radius: 10px;
+    text-align: center;
+    width: 403px;
+    margin-bottom: 20px;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (max-width: 629px) {
     body {
+        background-image: url(jungleBackground.jpg);
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
+    }
+
+    .start-game {
+        height: 40px;
+        width: 100px;
+        color: white;
+        background-color: black;
+        font-size: 15px;
         margin-left: 50px;
+        margin: 2px 0 2px 0;
     }
 
-    #header {
-        width: 350px;
-        height: 40px;
-        border: 1px solid black;
-        text-align: center;
-        padding-top: 5px;
-        color: rgb(242, 241, 232);
-        background-color: rgb(67, 67, 151);
-        border-radius: 10px;
+    .time-score {
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: rgb(231, 235, 8);
     }
 
     .board {
@@ -79,88 +99,29 @@ body {
     }
 
     .boardBox {
-        height: 99px;
+        height: 101px;
         width: 99px;
         border: 1px solid red;
         background-color: rgb(208, 152, 84);
     }
 
-    .time-score {
-        color: rgb(231, 235, 8);
-        margin-right: 50px;
-    }
-}
-@media screen and (max-width: 850px) {
-    body {
+    .mole {
+        background-image: url(../Images/GameImages/cartoon_mole.png);
         background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
     }
-
     #header {
-        width: 350px;
+        width: 403px;
         height: 40px;
-        border: 1px solid black;
         text-align: center;
         padding-top: 5px;
         color: rgb(242, 241, 232);
+    }
+
+    .hero {
         background-color: rgb(67, 67, 151);
         border-radius: 10px;
-    }
-
-    .board {
-        width: 303px;
-        height: 303px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .boardBox {
-        height: 99px;
-        width: 99px;
-        border: 1px solid red;
-        background-color: rgb(208, 152, 84);
-    }
-
-    .time-score {
-        color: rgb(231, 235, 8);
-        margin-right: 50px;
-    }
-}
-@media screen and (min-width: 851px) {
-    body {
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100vh;
-    }
-
-    #header {
-        width: 350px;
-        height: 40px;
-        border: 1px solid black;
         text-align: center;
-        padding-top: 5px;
-        color: rgb(242, 241, 232);
-        background-color: rgb(67, 67, 151);
-        border-radius: 10px;
-    }
-
-    .board {
-        width: 606px;
-        height: 606px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .boardBox {
-        height: 200px;
-        width: 200px;
-        border: 1px solid red;
-        background-color: rgb(208, 152, 84);
-    }
-
-    .time-score {
-        color: rgb(231, 235, 8);
-        margin-right: 50px;
+        width: 403px;
+        margin-bottom: 20px;
     }
 }
