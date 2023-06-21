@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Whack a mole, game, online-game">
     <link rel="stylesheet" href="assets/CSS/style.css">
-    <title>Whack A Mole</title>
+    <title>Whack a mole</title>
 </head>
 <body>
-    <!--Time and Score-->
-    <img src="assets" class="mole" alt="Mole">
+    <!--Time and score-->
     <div class="time-score">
-        <h1 id="header">Let's Play Whack A Mole</h1>
-        <h2>Your Score: <span id="score">0</span></h2>
-        <h2>Time Left: <span id="time-left">10</span></h2>
-
+        <div class="hero">
+            <h1 id="header">Lets play whack a mole</h1>
+            <h2>Your Score: <span id="score">0</span></h2>
+            <h2>Time left: <span id="time-left">10</span></h2>
+        </div>
         <!--Game Board-->
         <div class="board">
             <div class="boardBox" id="1"></div>
@@ -28,8 +28,9 @@
             <div class="boardBox" id="8"></div>
             <div class="boardBox" id="9"></div>
         </div>
+
         <button class="start-game">Start Game</button>
     </div>
-   <script src="assets/JS/script.js"></script> 
+    <script src="assets/JS/script.js"></script>
 </body>
 </html>
