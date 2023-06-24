@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    background-image: url(../Images/GameImages/jungleBackground.jpg);
+    background-image: url(jungleBackground.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -20,9 +20,27 @@ body {
     margin-left: 50px;
     margin: 2px 0 2px 0;
 }
+a {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: rgb(231, 235, 8);
+}
+p {
+    font-size: 1.5rem;
+    color: white;
+    background-color: rgb(208, 152, 84);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px 10px 0 10px;
+}
 
+.pic {
+    margin-left: 33%;
+    margin-top: 100px;
+}
 .time-score {
     padding: 5px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,11 +63,11 @@ body {
 }
 
 .mole {
-    background-image: url(../Images/GameImages/cartoon_mole.png);
+    background-image: url(cartoon_mole.png);
     background-size: cover;
 }
 #header {
-    width: 403px;
+    width: 605px;
     height: 40px;
     text-align: center;
     padding-top: 5px;
@@ -60,16 +78,36 @@ body {
     background-color: rgb(67, 67, 151);
     border-radius: 10px;
     text-align: center;
-    width: 403px;
+    width: 605px;
+    padding: 10px;
+    height: 140px;
     margin-bottom: 20px;
 }
 
 @media screen and (max-width: 629px) {
     body {
-        background-image: url(../Images/GameImages/jungleBackground.jpg);
+        background-image: url(jungleBackground.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
+    }
+
+    a {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        color: rgb(231, 235, 8);
+    }
+    p {
+        font-size: 1.5rem;
+        background-color: rgb(208, 152, 84);
+        border-radius: 10px;
+        text-align: justify;
+        padding: 20px 10px 0 10px;
+    }
+
+    .pic {
+        margin-left: 15%;
+        margin-top: 60px;
     }
 
     .start-game {
@@ -106,7 +144,7 @@ body {
     }
 
     .mole {
-        background-image: url(../Images/GameImages/cartoon_mole.png);
+        background-image: url(cartoon_mole.png);
         background-size: cover;
     }
     #header {
