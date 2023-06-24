@@ -23,17 +23,6 @@ function randomBoxes() {
 }
 //Hit and score function
 
-function randomBoxes() {
-    boardBoxes.forEach((boardBox) => {
-        boardBox.classList.remove('mole');
-    });
-
-    let randomBoxes = boardBoxes[Math.floor(Math.random() * 9)];
-    randomBoxes.classList.add('mole');
-
-    hit = randomBoxes.id;
-}
-
 boardBoxes.forEach((boardBox) => {
     boardBox.addEventListener('mousedown', () => {
         if (boardBox.id == hit) {
@@ -54,14 +43,17 @@ function moveMole() {
 }
 
 function countDown() {
-    if (currentTime > 0) {
-        currentTime--;
+    currentTime--;
+    if (currentTime >= 0) {
         timeLeft.textContent = currentTime;
         startGame.disabled = true;
     } else {
+        score.textContent = result;
+        document.getElementById('score').innerText =
+            'is ' + result.toString() + ' The Game is over! Please try again';
         clearInterval(countDownTimer);
         clearInterval(countTime);
-        alert('Game Over! your score is : ' + result);
+        hit = randomBoxes.id = false;
         startGame.disabled = false;
     }
 }
