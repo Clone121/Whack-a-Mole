@@ -63,7 +63,7 @@ p {
 }
 
 .mole {
-    background-image: url(cartoon_mole.png);
+    background-image: url(../Images/GameImages/cartoon_mole.png);
     background-size: cover;
 }
 #header {
@@ -144,7 +144,7 @@ p {
     }
 
     .mole {
-        background-image: url(cartoon_mole.png);
+        background-image: url(../Images/GameImages/cartoon_mole.png);
         background-size: cover;
     }
     #header {
