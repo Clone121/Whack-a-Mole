@@ -63,7 +63,7 @@ p {
 }
 
 .mole {
-    background-image: url(../Images/GameImages/cartoon_mole.png);
+    background-image: url('../Images/GameImages/cartoon_mole.png');
     background-size: cover;
 }
 #header {
@@ -86,7 +86,7 @@ p {
 
 @media screen and (max-width: 629px) {
     body {
-        background-image: url(../Images/GameImages/jungleBackground.jpg);
+        background-image: url('../Images/GameImages/jungleBackground.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         height: 100vh;
@@ -144,7 +144,7 @@ p {
     }
 
     .mole {
-        background-image: url(../Images/GameImages/cartoon_mole.png);
+        background-image: url('../Images/GameImages/cartoon_mole.png');
         background-size: cover;
     }
     #header {
