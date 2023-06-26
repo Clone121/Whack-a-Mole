@@ -11,7 +11,7 @@ let countDownTimer;
 
 //Random function for mole
 
-function randomBoxes() {
+//function randomBoxes() {
     boardBoxes.forEach((boardBox) => {
         boardBox.classList.remove('mole');
     });
@@ -60,7 +60,7 @@ function countDown() {
 
 startGame.addEventListener('click', moveMole);
 
-// detect browser version
+/*detect browser version
 getBrowser = () => {
     const userAgent = navigator.userAgent;
     let browser = "unkown";
@@ -96,3 +96,4 @@ getBrowser = () => {
 browserVersion = (userAgent,regex) => {
     return userAgent.match(regex) ? userAgent.match(regex)[2] : null;
 }
+*/
