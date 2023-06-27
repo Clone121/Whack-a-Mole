@@ -11,7 +11,7 @@ let countDownTimer;
 
 //Random function for mole
 
-//function randomBoxes() {
+function randomBoxes() {
     boardBoxes.forEach((boardBox) => {
         boardBox.classList.remove('mole');
     });
