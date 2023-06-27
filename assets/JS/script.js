@@ -6,8 +6,8 @@ const startGame = document.querySelector('.start-game');
 let result = 0;
 let hit;
 let currentTime = 10;
-let countTime;
-let countDownTimer;
+let countTime = null;
+let countDownTimer = null;
 
 //Random function for mole
 
