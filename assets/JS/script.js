@@ -60,7 +60,7 @@ function countDown() {
 
 startGame.addEventListener('click', moveMole);
 
-detect browser version
+/*detect browser version
 getBrowser = () => {
     const userAgent = navigator.userAgent;
     let browser = "unkown";
@@ -95,5 +95,5 @@ getBrowser = () => {
 
 browserVersion = (userAgent,regex) => {
     return userAgent.match(regex) ? userAgent.match(regex)[2] : null;
-}
+}*/
 
